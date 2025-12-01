@@ -1,6 +1,6 @@
 <h1>TME歌詞相關api整理</h1>
 歌詞都差不多的，畢竟是同一家。<br>
-事實上，api遠不止這麼多，歡迎由<b><em>您</em></b>補充。
+事實上，api遠不止這麼多，歡迎由<b><em>您</em></b>補充（暫時只對涉及雙語歌詞的部分感興趣）。
 <h2>QQ音樂</h2>
 <h3>搜索</h3>
 <code>curl -X POST 'https://u.y.qq.com/cgi-bin/musicu.fcg' -H 'Content-Type: application/json' -d '{
