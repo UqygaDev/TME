@@ -17,7 +17,6 @@
 <h3>musicMid轉換</h3>
 <code>curl -X GET 'https://c.y.qq.com/v8/fcg-bin/fcg_play_single_song.fcg?format=json&songmid=YOUR_SONG_MID'
 </code>
-沒有<code>format=json</code>也是可以正常請求的，mid會置於html標籤內。
 <h3>獲取歌詞</h3>
 <code>curl -X POST 'https://u.y.qq.com/cgi-bin/musicu.fcg' -H 'Content-Type: application/json' -d '{
     "music.musichallSong.PlayLyricInfo.GetPlayLyricInfo": {
@@ -43,11 +42,9 @@
 <h3>獲取歌曲hash</h3>
 <code>curl -X GET 'http://mobileservice.kugou.com/api/v3/lyric/search?keyword=YOUR_SEARCH_KEYWORD'
 </code>
-或者使用https://www.cnblogs.com/wxd501/p/17071045.html 也是可以獲取hash的，數據結構更加清晰，但是需要cookies。
 <h3>獲取歌詞列表</h3>
 <code>curl -X GET 'http://krcs.kugou.com/search?hash=YOUR_HASH'
 </code>
-如果有完整的關鍵字可以直接用keyword搜尋，如<code>keyword=Bebe Rexha - Ferrari</code>
 <h3>獲取歌詞</h3>
 <code>curl -X GET 'http://lyrics.kugou.com/download?ver=ANYTHING_HERE&id=YOUR_ID&accesskey=YOUR_ACCESS_KEY'
 </code>
