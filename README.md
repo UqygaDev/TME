@@ -46,6 +46,7 @@
 或者使用https://www.cnblogs.com/wxd501/p/17071045.html 也是可以獲取hash的，數據結構更加清晰，但是需要cookies。
 <h3>獲取歌詞列表</h3>
 <code>curl -X GET 'http://krcs.kugou.com/search?hash=YOUR_HASH'
+如果有完整的關鍵字可以直接用keyword搜尋，如<code>keyword=Bebe Rexha - Ferrari</code>
 </code>
 <h3>獲取歌詞</h3>
 <code>curl -X GET 'http://lyrics.kugou.com/download?ver=ANYTHING_HERE&id=YOUR_ID&accesskey=YOUR_ACCESS_KEY'
